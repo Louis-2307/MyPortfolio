@@ -81,15 +81,15 @@ function skillsCounter(){
 /*---------------Modal popup Animation--------------------*/
 let currentIndex = 0
 zoom_icons.forEach((icn, i) => icn.addEventListener("click", () => {
-    prt_section.classList.add("open")
+    prt_section.classList.add("open");
     document.body.classList.add("stopScrolling");
     currentIndex = i;
     changeImage(currentIndex)
 }))
 
 modal_overlay.addEventListener("click", () => {
-prt_section.classList.remove("open")
-document.body.classList.add("stopScrolling");
+prt_section.classList.remove("open");
+document.body.classList.remove("stopScrolling");
 });
 
 function changeImage(index){
