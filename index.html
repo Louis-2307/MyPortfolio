@@ -18,24 +18,23 @@
             <div class="links">
                 <ul>
                     <li>
-                        <a href="#" class="nav-link">Home</a>
+                        <a href="#home" class="nav-link">Home</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link">About</a>
+                        <a href="#about" class="nav-link">About</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link">Portfolio</a>
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
-                <i class="uil uil-moon toggle-btn"></i>
             </div>
         </nav>
     </header> 
     <main>
-        <section class="showcase-area">
+        <section class="showcase-area" id="home">
             <div class="container">
                 <div class="showcase-info">
                     <h3 class="sub-heading">Mobile Application Developer</h3>
@@ -53,7 +52,7 @@
             </div>
         </section>
 
-        <section class="about section">
+        <section class="about section" id="about">
             <div class="container">
                 <div class="about-grid">
                     <div class="about-card">
@@ -368,7 +367,7 @@
                 <div class="about-info">
                         <h3 class="sub-heading">About me</h3>
                         <h1 class="heading">Work hard,<br>Play Harder </h1>
-                        <p id="firsttext" class="text">Dedicated professional and Mobile Application Development student with eight (8) plus years successful experience working for international companies. I was promoted to Project Manager which allowed me to collect and develop more valuable experience managing and deploying projects. 
+                        <p id="firsttext" class="text">Dedicated and professional Mobile Application Development student with eight (8) plus years successful experience working for international companies. I was promoted to Project Manager which allowed me to collect and develop more valuable experience managing and deploying projects. 
                         </p>
                         <p id="secondtext" class="text">
                             Recognized for my skills and accomplishments, I was awarded the role of General Manager further encompassing my leadership and operations skills building a smoothly run international technical organization. 
@@ -380,17 +379,17 @@
                 </div>
         </section>
 
-        <section class="skill section">
+        <section class="skill section" >
             <div class="container">
                 <div class="skills-box">
                     <div class="box-heading">
                         <h3 class="sub-heading">My skills</h3>
-                        <h1 class="heading">Let me help you</h1>
+                        <h1 class="heading">Let me contribue to your company<br> by my skills</h1>
                         <div class="box-desc">
                             <p class="text">
-                                put paragraph here.
+                              The best preparation for tomorrow is doing the best today
                             </p>
-                            <a href="#" class="btn">Hire me</a>
+                            <a href="mailto:louis.le.2307@gmail.com" class="btn">Hire me</a>
                         </div>
                     </div>
                     <div class="skill-warp">
@@ -467,6 +466,18 @@
                         </div>
 
                         <div class="skill">
+                          <div class="sk-process">
+                              <svg>
+                                  <circle cx="75" cy="75" r="68"/>
+                              </svg>
+                              <h2 class="counter">
+                                  <span data-target="80">0</span>%
+                              </h2>
+                          </div>
+                          <div class="sk-title">MySQL</div>
+                      </div>
+
+                        <div class="skill">
                             <div class="sk-process">
                                 <svg>
                                     <circle cx="75" cy="75" r="68"/>
@@ -495,7 +506,7 @@
             </div>
         </section>
 
-        <section class="portfolio section">
+        <section class="portfolio section" id="portfolio">
             <div class="modal">
                 <div class="modal-overlay"></div>
                 <div class="slider-wrap">
@@ -519,7 +530,7 @@
                 <div class="portfolio-header">
                     <div class="portfolio-title">
                         <h3 class="sub-heading">Portfolio</h3>
-                        <h1 class="heading">Lastest Projects</h1>
+                        <h1 class="heading">Projects</h1>
                     </div>
                 </div>
                     <div class="portfolio-gallery">
@@ -530,14 +541,14 @@
                                     <span class="prt-icon zoom-icon" style="--i: 0s">
                                         <i class="uil uil-search-plus"></i>
                                     </span>
-                                    <a href="" class="prt-icon" style="--i: 0.15s">
+                                    <a href="https://www.youtube.com/watch?v=z3CkLk9qtX0" class="prt-icon" style="--i: 0.15s">
                                         <i class="uil uil-link-h"></i>
                                     </a>
                                 </div>
                             </div>
                             <div class="prt-desc">
                                 <h3>Olido interaction</h3>
-                                <a href="#" class="btn secondary-btn sm">Read More</a>
+                                <a href="https://github.com/Louis-2307/MyPortfolio.git" class="btn secondary-btn sm">Read More</a>
                             </div>    
                         </div>
                         
@@ -634,7 +645,54 @@
                     </div>
             </div>
         </section>
+
+        <section class="contact section" id="contact">
+          <div class="container">
+            <div class="contact-info">
+              <h3 class="sub-heading">Contact Me</h3>
+              <h1 class="heading">Let's work together</h1>
+              <p class="text">
+                Coming together is a beginning. Keeping together is progress. Working together is success. <br>- Henry Ford -
+              </p>
+              <a href="mailto:louis.le.2307@gmail.com" class="mail">Louis.le.2307@gmail.com <i class="uil uil-arrow-right"></i></a>
+            </div>
+
+            <form action="index.html" class="contact-form">
+              <h3>Send me a message</h3>
+              <input type="text" class="form-input" placeholder="Your Name" required>
+              <input type="email" class="form-input" placeholder="Your Email" required>
+              <textarea placeholder="Project Details" class="form-input" required></textarea>
+              <input type="submit" value="Send" class="btn">
+            </form>
+          </div>
+        </section>
     </main>
+    <footer>
+      <div class="container">
+        <a href="#" class="logo">Portf<span>olio.</span></a>
+        <p class="text">&copy; Copyright 2022. All rights reserved</p>
+        <ui class="social-media">
+         <li>
+          <a href="#" class="social-link">
+            <i class="uil uil-facebook-f"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <i class="uil uil-twitter"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <i class="uil uil-dribbble"></i>
+          </a>
+        </li>
+
+        </ui>
+      </div>
+    </footer>
 
     <!-- Javascript Files -->
     <script src="./js/app.js"></script>
