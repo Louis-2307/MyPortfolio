@@ -569,7 +569,7 @@ header.scrolled .logo{
     border-radius: 15px;
     overflow: hidden;
     background-color: var(--bg-color-2);
-    height: 265px;
+    height: 275px;
     display: grid;
     grid-template-rows: 1fr auto;
 }
@@ -683,7 +683,7 @@ header.scrolled .logo{
 .slider-wrap{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, calc(-50% + 400px));
     width: 90%;
     max-width: 900px;
@@ -696,7 +696,8 @@ header.scrolled .logo{
 }
 
 .slider-wrap img{
-    width: 100%;
+    width: 50%;
+    height: 100%;
     display: none;
     border-radius: 10px;
 }
