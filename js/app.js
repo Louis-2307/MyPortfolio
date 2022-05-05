@@ -15,6 +15,8 @@ const next_btn = document.querySelector(".next-btn");
 
 const links = document.querySelectorAll(".nav-link")
 
+const sendButton = document.getElementById("sendBtn")
+
 window.addEventListener("scroll", () => {
     activeLink();
     if(!skillsPlayed) skillsCounter();
@@ -136,3 +138,12 @@ function activeLink(){
 }
 
 activeLink();
+
+/*---------------Contact--------------------*/
+var subject = document.getElementById("subject")
+var phone = document.getElementById("phone")
+var body = document.getElementById("body")
+
+sendButton.addEventListener("click" , () => {
+    window.open(`mailto:Louis.le.2307@gmail.com?subject= ${subject.value} &body= ${" Phone: " + phone.value + " " + "Message: " + body.value }`);
+})

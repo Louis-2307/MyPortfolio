@@ -702,6 +702,12 @@ header.scrolled .logo{
     border-radius: 10px;
 }
 
+.slider-wrap .port{
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+
 .navigation{
    color: #fff;
    font-size: 2rem;
