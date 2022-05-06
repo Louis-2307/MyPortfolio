@@ -17,6 +17,9 @@ const links = document.querySelectorAll(".nav-link")
 
 const sendButton = document.getElementById("sendBtn")
 
+const meta = document.querySelectorAll('.item-meta');
+const collapse = 'progress__item--collapse';
+
 window.addEventListener("scroll", () => {
     activeLink();
     if(!skillsPlayed) skillsCounter();
@@ -147,3 +150,15 @@ var body = document.getElementById("body")
 sendButton.addEventListener("click" , () => {
     window.open(`mailto:Louis.le.2307@gmail.com?subject= ${subject.value} &body= ${" Phone: " + phone.value + " " + "Message: " + body.value }`);
 })
+
+/*---------------Career Bar Styling--------------------*/
+
+
+$('.item').on('click',function(){
+    $(this).removeClass(collapse);
+    $('.item').not(this).each(function(){
+      $(this).addClass(collapse);
+      $(this).find('.item-meta').removeClass('show');
+    });
+    $(this).find('.item-meta').addClass('show');
+  });
