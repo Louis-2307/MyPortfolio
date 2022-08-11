@@ -162,3 +162,6 @@ $('.item').on('click',function(){
     });
     $(this).find('.item-meta').addClass('show');
   });
+
+
+
