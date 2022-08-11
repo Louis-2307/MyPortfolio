@@ -18,11 +18,11 @@ function init() {
   //Camera setup
   camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
  // camera.position.set(0, 5, 30);
- camera.position.set(0, 7, 690);
+ camera.position.set(0, 2, 10);
   const ambient = new THREE.AmbientLight(0x404040, 2);
   scene.add(ambient);
 
-  const light = new THREE.DirectionalLight(0xffffff, 70);
+  const light = new THREE.DirectionalLight(0xffffff, 5);
   light.position.set(100, 100, 900);
   scene.add(light);
   //Renderer
@@ -34,7 +34,7 @@ function init() {
 
   //Load Model
   let loader = new THREE.GLTFLoader();
-  loader.load("./knight/scene.gltf", function(gltf) {
+  loader.load("./computer/scene.gltf", function(gltf) {
     scene.add(gltf.scene);
     house = gltf.scene.children[0];
     animate();
