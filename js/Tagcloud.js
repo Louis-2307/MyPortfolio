@@ -13,7 +13,8 @@ const myTags = [
 "Github",
 "Firebase",
 "MySQL",
-"CICD"
+"CICD",
+"MVVM"
 ];
 var tagCloud = TagCloud(".contents", myTags, {
 // radius in px
