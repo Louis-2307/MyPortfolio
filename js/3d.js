@@ -34,7 +34,7 @@ function init() {
 
   //Load Model
   let loader = new THREE.GLTFLoader();
-  loader.load("./computer/scene.gltf", function(gltf) {
+  loader.load("./computer-desk-area/scene.gltf", function(gltf) {
     scene.add(gltf.scene);
     house = gltf.scene.children[0];
     animate();

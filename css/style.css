@@ -923,11 +923,11 @@ footer .social-media{
   .scene,
 canvas {
   position:absolute;
-  width: 100%;
-  height: 130%;
+  width: 90%;
+  height: 150%;
   z-index: -1;
-  right: -14%;
-  top: -20%;
+  right: -12%;
+  top: -22%;
   
 }
 
